@@ -21,8 +21,8 @@ class LoginScreen extends StatelessWidget {
                 style: TextStyle(color: Colors.black, fontSize: 30),
               ),
               Text(
-                "Sign Up", 
-              style:TextStyle(color:primaryColor, fontSize:18),
+                "Sign Up",
+                style: TextStyle(color: primaryColor, fontSize: 18),
               )
             ])
           ],

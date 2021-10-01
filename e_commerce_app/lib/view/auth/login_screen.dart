@@ -35,7 +35,13 @@ class LoginScreen extends StatelessWidget {
               onSaved: (value){},
               validator: (value){},
             ),
-            
+            SizedBox(height:40),
+            CustomTextFormField(
+              text: "Password",
+              hint: "*********",
+              onSaved: (value){},
+              validator: (value){},
+            ),
           ],),
       ),
     );

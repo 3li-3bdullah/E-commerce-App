@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../constants.dart';
+
 class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -20,7 +22,7 @@ class LoginScreen extends StatelessWidget {
               ),
               Text(
                 "Sign Up", 
-              style:TextStyle(color:Color.fromRGBO(0, 197, 105, 1), fontSize:18),
+              style:TextStyle(color:primaryColor, fontSize:18),
               )
             ])
           ],

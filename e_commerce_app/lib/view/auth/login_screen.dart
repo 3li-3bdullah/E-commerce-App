@@ -9,11 +9,20 @@ class LoginScreen extends StatelessWidget {
         backgroundColor: Colors.white,
       ),
       body: Padding(
-        padding: const EdgeInsets.only(top: 20 , left:10 , right: 10 ),
+        padding: const EdgeInsets.only(top: 20, left: 10, right: 10),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Row(children: [Text("Welcome,"), Text("Sign Up")])
+            Row(children: [
+              Text(
+                "Welcome,",
+                style: TextStyle(color: Colors.black, fontSize: 30),
+              ),
+              Text(
+                "Sign Up", 
+              style:TextStyle(color:Color.fromRGBO(0, 197, 105, 1), fontSize:18),
+              )
+            ])
           ],
         ),
       ),

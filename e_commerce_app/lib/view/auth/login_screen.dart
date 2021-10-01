@@ -42,6 +42,7 @@ class LoginScreen extends StatelessWidget {
               onSaved: (value){},
               validator: (value){},
             ),
+            SizedBox(height:20),
             CustomText(
               text: "Forgot Password?",
               fontSize: 14,

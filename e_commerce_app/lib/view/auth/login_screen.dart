@@ -20,7 +20,12 @@ class LoginScreen extends StatelessWidget {
               CustomText(text: "Hi!", fontSize: 30),
               CustomText(text: "Sign Up" , fontSize:18 , color: primaryColor, ),
             
-            ])
+            ]),
+            CustomText(
+              text: "Sign in to continue",
+              fontSize: 14,
+              color: Colors.grey,
+            ),
           ],
         ),
       ),

@@ -11,8 +11,9 @@ class LoginScreen extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.only(top: 20 , left:10 , right: 10 ),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Row(children: [Text("ali"), Text("ali")])
+            Row(children: [Text("Welcome,"), Text("Sign Up")])
           ],
         ),
       ),

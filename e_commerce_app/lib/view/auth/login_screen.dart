@@ -1,4 +1,5 @@
 import 'package:e_commerce_app/view/widgets/custom_text.dart';
+import 'package:e_commerce_app/view/widgets/custom_text_formfield.dart';
 import 'package:flutter/material.dart';
 
 import '../constants.dart';
@@ -28,23 +29,8 @@ class LoginScreen extends StatelessWidget {
               color: Colors.grey,
             ),
             SizedBox(height:30),
-            Column(children: [
-              CustomText(
-                text: "Email",
-                fontSize: 14,
-                color: Colors.grey.shade900,
-              ),
-              TextFormField(
-                decoration: InputDecoration(
-                  hintText: "example@gmail.com",
-                  hintStyle: TextStyle(
-                    color: Colors.grey
-                  ),
-                  filled: true,
-                  fillColor: Colors.white,
-                ),
-              )
-            ],)
+            CustomTextFormField(),
+            
           ],),
       ),
     );

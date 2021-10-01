@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/view/widgets/custom_text.dart';
 import 'package:flutter/material.dart';
 
 import '../constants.dart';
@@ -16,14 +17,9 @@ class LoginScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Row(children: [
-              Text(
-                "Welcome,",
-                style: TextStyle(color: Colors.black, fontSize: 30),
-              ),
-              Text(
-                "Sign Up",
-                style: TextStyle(color: primaryColor, fontSize: 18),
-              )
+              CustomText(text: "Hi!", fontSize: 30),
+              CustomText(text: "Sign Up" , fontSize:18 , color: primaryColor, ),
+            
             ])
           ],
         ),

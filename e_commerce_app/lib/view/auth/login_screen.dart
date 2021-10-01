@@ -29,7 +29,12 @@ class LoginScreen extends StatelessWidget {
               color: Colors.grey,
             ),
             SizedBox(height:30),
-            CustomTextFormField(),
+            CustomTextFormField(
+              text: "Email",
+              hint: "example@gmail.com",
+              onSaved: (value){},
+              validator: (value){},
+            ),
             
           ],),
       ),

@@ -50,8 +50,9 @@ class LoginScreen extends StatelessWidget {
               fontSize: 14,
               alignment: Alignment.topRight,
             ),
+            SizedBox(height: 20),
             Padding(
-              padding: EdgeInsets.all(10),
+              padding: EdgeInsets.all(18),
               child: Material(
                 color: primaryColor,
                 borderRadius: BorderRadius.circular(10),

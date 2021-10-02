@@ -57,6 +57,11 @@ class LoginScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10),
                 child: MaterialButton(
                   onPressed: () {},
+                  child: CustomText(
+                    text: "Sign in ",
+                    alignment: Alignment.center,
+                    color: Colors.white,
+                  ),
                 ),
               ),
             )

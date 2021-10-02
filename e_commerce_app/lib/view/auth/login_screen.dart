@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/view/widgets/custom_button.dart';
 import 'package:e_commerce_app/view/widgets/custom_text.dart';
 import 'package:e_commerce_app/view/widgets/custom_text_formfield.dart';
 import 'package:flutter/material.dart';
@@ -51,7 +52,10 @@ class LoginScreen extends StatelessWidget {
               alignment: Alignment.topRight,
             ),
             SizedBox(height: 20),
-            
+            CustomButton(
+              text: "Sign in",
+              onPressed: (){},
+            )
           ],
         ),
       ),

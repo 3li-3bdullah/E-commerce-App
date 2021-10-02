@@ -53,7 +53,7 @@ class LoginScreen extends StatelessWidget {
             ),
             SizedBox(height: 20),
             CustomButton(
-              text: "Sign in",
+              text: "Sign In",
               onPressed: () {},
             ),
             SizedBox(height: 20),
@@ -63,7 +63,9 @@ class LoginScreen extends StatelessWidget {
               child: MaterialButton(
                 onPressed: () {},
                 child: Row(children: [
-                  
+                  Image.asset('assets/images/google.png'),
+                  SizedBox(width: 90),
+                  CustomText(text: "Sign In with Google")
                 ]),
               ),
             )

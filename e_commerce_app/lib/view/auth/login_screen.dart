@@ -61,6 +61,11 @@ class LoginScreen extends StatelessWidget {
             CustomText(text: "-OR-", alignment: Alignment.center),
             SizedBox(height:40),
             CustomButtonSocial(
+              text: "Sign In with Facebook",
+              imageName: 'assets/images/facebook.png',
+            ),
+            SizedBox(height:40),
+             CustomButtonSocial(
               text: "Sign In with Google",
               imageName: 'assets/images/google.png',
             ),

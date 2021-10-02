@@ -1,4 +1,5 @@
 import 'package:e_commerce_app/view/widgets/custom_button.dart';
+import 'package:e_commerce_app/view/widgets/custom_button_social.dart';
 import 'package:e_commerce_app/view/widgets/custom_text.dart';
 import 'package:e_commerce_app/view/widgets/custom_text_formfield.dart';
 import 'package:flutter/material.dart';
@@ -59,17 +60,7 @@ class LoginScreen extends StatelessWidget {
             SizedBox(height: 20),
             CustomText(text: "-OR-", alignment: Alignment.center),
             SizedBox(height:40),
-            Material(
-              borderRadius: BorderRadius.circular(10),
-              child: MaterialButton(
-                onPressed: () {},
-                child: Row(children: [
-                  Image.asset('assets/images/google.png'),
-                  SizedBox(width: 90),
-                  CustomText(text: "Sign In with Google")
-                ]),
-              ),
-            )
+            CustomButtonSocial(),
           ],
         ),
       ),

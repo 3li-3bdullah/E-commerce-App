@@ -58,6 +58,7 @@ class LoginScreen extends StatelessWidget {
             ),
             SizedBox(height: 20),
             CustomText(text: "-OR-", alignment: Alignment.center),
+            SizedBox(height:40),
             Material(
               borderRadius: BorderRadius.circular(10),
               child: MaterialButton(

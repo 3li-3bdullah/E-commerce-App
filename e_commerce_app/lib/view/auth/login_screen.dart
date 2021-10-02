@@ -18,44 +18,50 @@ class LoginScreen extends StatelessWidget {
           children: [
             Row(children: [
               CustomText(text: "Hi!", fontSize: 30),
-              CustomText(text: "Sign Up" , fontSize:18 , color: primaryColor, ),
-            
+              CustomText(
+                text: "Sign Up",
+                fontSize: 18,
+                color: primaryColor,
+              ),
             ]),
-            SizedBox(height:10),
+            SizedBox(height: 10),
             CustomText(
               text: "Sign in to continue",
               fontSize: 14,
               color: Colors.grey,
             ),
-            SizedBox(height:30),
+            SizedBox(height: 30),
             CustomTextFormField(
               text: "Email",
               hint: "example@gmail.com",
-              onSaved: (value){},
-              validator: (value){},
+              onSaved: (value) {},
+              validator: (value) {},
             ),
-            SizedBox(height:40),
+            SizedBox(height: 40),
             CustomTextFormField(
               text: "Password",
               hint: "*********",
-              onSaved: (value){},
-              validator: (value){},
+              onSaved: (value) {},
+              validator: (value) {},
             ),
-            SizedBox(height:20),
+            SizedBox(height: 20),
             CustomText(
               text: "Forgot Password?",
               fontSize: 14,
               alignment: Alignment.topRight,
             ),
-            TextButton(
-              onPressed: (){},
-               color: primaryColor,
-               child: CustomText(
-                 text: "SIGN IN",
-                 alignment: Alignment.center,
-                  ),
-               )
-          ],),
+            Padding(
+              padding: EdgeInsets.all(10),
+              child: Material(
+                color: primaryColor,
+                borderRadius: BorderRadius.circular(10),
+                child: MaterialButton(
+                  onPressed: () {},
+                ),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }

@@ -47,6 +47,14 @@ class LoginScreen extends StatelessWidget {
               fontSize: 14,
               alignment: Alignment.topRight,
             ),
+            TextButton(
+              onPressed: (){},
+               color: primaryColor,
+               child: CustomText(
+                 text: "SIGN IN",
+                 alignment: Alignment.center,
+                  ),
+               )
           ],),
       ),
     );

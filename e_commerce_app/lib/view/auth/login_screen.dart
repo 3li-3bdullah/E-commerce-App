@@ -51,21 +51,7 @@ class LoginScreen extends StatelessWidget {
               alignment: Alignment.topRight,
             ),
             SizedBox(height: 20),
-            Padding(
-              padding: EdgeInsets.all(18),
-              child: Material(
-                color: primaryColor,
-                borderRadius: BorderRadius.circular(10),
-                child: MaterialButton(
-                  onPressed: () {},
-                  child: CustomText(
-                    text: "Sign in ",
-                    alignment: Alignment.center,
-                    color: Colors.white,
-                  ),
-                ),
-              ),
-            )
+            
           ],
         ),
       ),

@@ -57,10 +57,7 @@ class LoginScreen extends StatelessWidget {
             CustomButton(
               text: "Sign In",
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => SecondScreen())
-                );
+                Get.to(SecondScreen());
               },
             ),
             SizedBox(height: 40),

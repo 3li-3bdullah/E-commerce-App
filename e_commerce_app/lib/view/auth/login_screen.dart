@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/view/auth/second_screen.dart';
 import 'package:e_commerce_app/view/widgets/custom_button.dart';
 import 'package:e_commerce_app/view/widgets/custom_button_social.dart';
 import 'package:e_commerce_app/view/widgets/custom_text.dart';
@@ -55,17 +56,22 @@ class LoginScreen extends StatelessWidget {
             SizedBox(height: 15),
             CustomButton(
               text: "Sign In",
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SecondScreen())
+                );
+              },
             ),
             SizedBox(height: 40),
             CustomText(text: "-OR-", alignment: Alignment.center),
-            SizedBox(height:40),
+            SizedBox(height: 40),
             CustomButtonSocial(
               text: "Sign In with Facebook",
               imageName: 'assets/images/facebook.png',
             ),
-            SizedBox(height:40),
-             CustomButtonSocial(
+            SizedBox(height: 40),
+            CustomButtonSocial(
               text: "Sign In with Google",
               imageName: 'assets/images/google.png',
             ),

@@ -7,7 +7,12 @@ class SecondScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: GetBuilder<AuthViewModel>(child: Text("Second Screen"))),
+      body: Center(
+        child: GetBuilder<AuthViewModel>(
+          init: AuthViewModel(),
+          builder: (value) => Text("${value.counter}"),
+          )
+          ),
     );
   }
 }

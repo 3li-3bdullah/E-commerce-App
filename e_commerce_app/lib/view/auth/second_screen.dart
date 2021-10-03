@@ -7,12 +7,25 @@ class SecondScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: GetBuilder<AuthViewModel>(
-          init: AuthViewModel(),
-          builder: (value) => Text("${value.counter}"),
-          )
-          ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+         
+             GetBuilder<AuthViewModel>(
+              init: AuthViewModel(),
+              builder: (value) => Text("${value.counter}"),
+              )
+              
+              GetBuilder<AuthViewModel>(
+                child: Text("increment"),
+                 builder: (value) => ElevatedButton(
+                 onPressed: (){
+                   value.increment();
+                 },
+                ),
+              ),
+        ],
+      ),
     );
   }
 }

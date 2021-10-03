@@ -5,6 +5,7 @@ import 'package:e_commerce_app/view/widgets/custom_text.dart';
 import 'package:e_commerce_app/view/widgets/custom_text_formfield.dart';
 import 'package:flutter/material.dart';
 import '../constants.dart';
+import 'package:get/get.dart';
 
 class LoginScreen extends StatelessWidget {
   @override

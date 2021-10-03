@@ -52,12 +52,12 @@ class LoginScreen extends StatelessWidget {
               fontSize: 14,
               alignment: Alignment.topRight,
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 15),
             CustomButton(
               text: "Sign In",
               onPressed: () {},
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 40),
             CustomText(text: "-OR-", alignment: Alignment.center),
             SizedBox(height:40),
             CustomButtonSocial(

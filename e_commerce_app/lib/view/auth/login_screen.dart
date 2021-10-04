@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 import '../constants.dart';
 import 'package:get/get.dart';
 
-class LoginScreen extends GetWidget<AuthViewModel>{
+class LoginScreen extends GetWidget<AuthViewModel> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -72,6 +72,10 @@ class LoginScreen extends GetWidget<AuthViewModel>{
             SizedBox(height: 40),
             CustomButtonSocial(
               text: "Sign In with Google",
+              onPress: () {
+                controller:
+                googleSignInMethod();
+              },
               imageName: 'assets/images/google.png',
             ),
           ],

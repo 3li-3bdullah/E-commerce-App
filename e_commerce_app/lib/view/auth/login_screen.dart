@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/core/services/view_modal/auth_view_model.dart';
 import 'package:e_commerce_app/view/auth/second_screen.dart';
 import 'package:e_commerce_app/view/widgets/custom_button.dart';
 import 'package:e_commerce_app/view/widgets/custom_button_social.dart';
@@ -7,7 +8,7 @@ import 'package:flutter/material.dart';
 import '../constants.dart';
 import 'package:get/get.dart';
 
-class LoginScreen extends StatelessWidget {
+class LoginScreen extends GetWidget<AuthViewModel>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(

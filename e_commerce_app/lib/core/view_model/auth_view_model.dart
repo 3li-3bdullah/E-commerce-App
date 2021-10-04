@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 
 class AuthViewModel extends GetxController {
-  int counter = 0;
+ 
 
   @override
   void onInit() {
@@ -18,8 +18,4 @@ class AuthViewModel extends GetxController {
     super.onClose();
   }
 
-  void increment() {
-    counter++;
-    update();
-  }
 }

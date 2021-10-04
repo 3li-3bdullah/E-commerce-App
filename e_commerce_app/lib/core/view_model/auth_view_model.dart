@@ -19,4 +19,8 @@ class AuthViewModel extends GetxController {
   void onClose() {
     super.onClose();
   }
+
+  void googleSignInMethod() async {
+    await _auth.googleSignIn.signIn();
+  }
 }

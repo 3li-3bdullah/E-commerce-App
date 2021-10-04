@@ -1,7 +1,8 @@
 import 'package:get/get.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 class AuthViewModel extends GetxController {
- 
+  GoogleSignIn googleSignIn = GoogleSignIn(scopes: ['email']);
 
   @override
   void onInit() {
@@ -17,5 +18,4 @@ class AuthViewModel extends GetxController {
   void onClose() {
     super.onClose();
   }
-
 }

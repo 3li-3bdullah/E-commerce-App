@@ -51,7 +51,7 @@ class LoginScreen extends GetWidget<AuthViewModel> {
             ),
             SizedBox(height: 20),
             CustomText(
-              text: "Forgot Password?",
+              text: "Forgot Password ?",
               fontSize: 14,
               alignment: Alignment.topRight,
             ),

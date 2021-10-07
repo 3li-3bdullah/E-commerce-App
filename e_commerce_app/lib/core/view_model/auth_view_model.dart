@@ -23,5 +23,12 @@ class AuthViewModel extends GetxController {
   void googleSignInMethod() async {
     final GoogleSignInAcount googleUser = await _auth.googleSignIn.signIn();
     print(googleUser);
+    GoogleSignInAuthentication googleSignInAuthentication =
+        await googleUser.authentication;
+   final AuthCredential credential = GoogleAuthProvider.credential(
+      idToken: googleSignInAuthentication.idToken,
+      accessToken: googleSignInAuthentication.accessToken,
+    );
+   await _auth.signInWithCredential(credential);
   }
 }

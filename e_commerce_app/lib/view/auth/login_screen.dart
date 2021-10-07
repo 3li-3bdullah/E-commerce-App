@@ -17,7 +17,7 @@ class LoginScreen extends GetWidget<AuthViewModel> {
         backgroundColor: Colors.white,
       ),
       body: Padding(
-        padding: const EdgeInsets.only(top: 20, left: 10, right: 10),
+        padding: const EdgeInsets.only(top: 50, left: 20, right: 20),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [

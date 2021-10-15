@@ -17,8 +17,9 @@ class SecondScreen extends StatelessWidget {
               )
               
               GetBuilder<AuthViewModel>(
-                child: Text("increment"),
+               
                  builder: (value) => ElevatedButton(
+                   child: Text("increment"),
                  onPressed: (){
                    value.increment();
                  },

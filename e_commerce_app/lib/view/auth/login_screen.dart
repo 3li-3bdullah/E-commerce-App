@@ -7,7 +7,7 @@ import 'package:e_commerce_app/view/widgets/custom_text_formfield.dart';
 import 'package:flutter/material.dart';
 import '../constants.dart';
 import 'package:get/get.dart';
-
+import 'package:firebase_auth/firebase_auth.dart';
 class LoginScreen extends GetWidget<AuthViewModel> {
   @override
   Widget build(BuildContext context) {

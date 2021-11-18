@@ -20,17 +20,17 @@ class AuthViewModel extends GetxController {
     super.onClose();
   }
 
-  void googleSignInMethod() async {
-    final GoogleSignInAcount googleUser = await _auth.googleSignIn.signIn();
-    print(googleUser);
-    GoogleSignInAuthentication googleSignInAuthentication =
-        await googleUser.authentication;
-    final AuthCredential credential = GoogleAuthProvider.credential(
-      idToken: googleSignInAuthentication.idToken,
-      accessToken: googleSignInAuthentication.accessToken,
-    );
-    UserCredential userCredential =
-        await _auth.signInWithCredential(credential);
-    print(userCredential.user);
-  }
+  // void googleSignInMethod() async {
+  //   final GoogleSignInAcount googleUser = await _auth.googleSignIn.signIn();
+  //   print(googleUser);
+  //   GoogleSignInAuthentication googleSignInAuthentication =
+  //       await googleUser.authentication;
+  //   final AuthCredential credential = GoogleAuthProvider.credential(
+  //     idToken: googleSignInAuthentication.idToken,
+  //     accessToken: googleSignInAuthentication.accessToken,
+  //   );
+  //   UserCredential userCredential =
+  //       await _auth.signInWithCredential(credential);
+  //   print(userCredential.user);
+  // }
 }
